@@ -1,5 +1,9 @@
 controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+  resource:
+    path: ../src/Controller/
+    namespace: App\Controller
+  type: attribute
+
+fichier:
+  path: /fichier/{correction}
+  controller: App\Controller\FichierController::correction
