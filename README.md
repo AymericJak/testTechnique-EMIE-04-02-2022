@@ -1,6 +1,6 @@
 # Test technique - EMIE - 04/02/2023
 
-## Première étape : Ajout des composant
+### Ajout des composant
 
 Uniquement en mode développeur :
 `composer require --dev symfony/maker-bundle`
@@ -12,7 +12,9 @@ Uniquement en mode développeur :
 `composer require api`
 --> Permet l'utilisation d'API Platform
 
-## Réalisation
+---
+
+### Réalisation
 
 J'ai donc créé un controller `FichierController`. Celui-ci définie la route suivant : `/fichier/{correction}`.
 *correction* est ainsi un paramètre optionnel :
@@ -34,7 +36,7 @@ Mais aussi la gestion d'exceptions / erreurs comme :
 
 ---
 
-## Environnement Docker
+### Environnement Docker
 
 Création du dossier `docker` avec le fichier `Dockerfile`.
 
