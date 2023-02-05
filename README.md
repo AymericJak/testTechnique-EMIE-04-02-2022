@@ -31,3 +31,19 @@ Nous pouvons y constater le test des deux types de corrections :
 Mais aussi la gestion d'exceptions / erreurs comme :
 - [L'entrée d'un mauvais type de correction](resultats/mauvaiseCorrection.png)
 - [L'erreur dans l'envoi de fichier](resultats/aucunFichier.png)
+
+---
+
+## Environnement Docker
+
+Création du dossier `docker` avec le fichier `Dockerfile`.
+
+Contenu du fichier `Dockerfile` :
+- Image PHP que j'ai trouvé ci-contre dans les : [PHP-tag](https://hub.docker.com/_/php/tags) --> [php:8.1-apache](https://hub.docker.com/layers/library/php/8.1-apache/images/sha256-c11682371a4a2497fca68acb5092a3da7c7e59f188171f46f47d8262d4a4cfdd?context=explore)
+- Installation des extensions pdo_pgsql et pgsql
+- Installation de composer
+- Configuration du serveur apache
+
+Commandes que j'ai utilisé pour utiliser le docker :
+- `docker build . -f ./docker/Dockerfile -t test-emie-jakobowski`
+- `docker-compose up -d` | `docker-compose stop`
